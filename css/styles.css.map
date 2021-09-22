@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/styles.scss"
-    ],
-    "names": [],
-    "file": "styles.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_fonts.scss","../scss/utilities/_variables.scss","../scss/layout/_header.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;ACFJ;AAOA;ADPA;EACI;EACA;;AEMQ;EAEI","file":"styles.css"}

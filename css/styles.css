@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: Vogue;
+  src: url(../../Vogue.ttf);
+}
+/* Colores */
+/* Fuentes */
+@font-face {
+  font-family: Vogue;
+  src: url(../../Vogue.ttf);
+}
+header nav .navbar__logo a {
+  font-family: Poppins;
+}
+
+/*# sourceMappingURL=styles.css.map */
