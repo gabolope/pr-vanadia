@@ -1,15 +1,108 @@
 @font-face {
-  font-family: Vogue;
-  src: url(../../Vogue.ttf);
-}
-/* Colores */
-/* Fuentes */
-@font-face {
-  font-family: Vogue;
-  src: url(../../Vogue.ttf);
-}
-header nav .navbar__logo a {
-  font-family: Poppins;
+  font-family: 'Vogue';
+  src: url(../../media/fonts/Vogue.ttf);
 }
 
+/* Colores */
+/* Fuentes */
+header {
+  background-color: #784E3B;
+}
+
+header .navbar {
+  display: block;
+  z-index: 5;
+}
+
+header .logo {
+  font-family: "Vogue";
+  color: #F8F4F4;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+
+header .logo:hover {
+  text-decoration: none;
+}
+
+header .flexPadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .flexPadre .invisibleItem {
+  visibility: hidden;
+}
+
+header .navbar-toggler, header .navbar-dark, header .hamburger {
+  border-color: transparent !important;
+}
+
+header .navbar-toggler:focus, header .navbar-dark:focus, header .hamburger:focus {
+  outline: none;
+}
+
+header .secciones {
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+header .secciones a {
+  color: #F8F4F4;
+}
+
+header .secciones .dropdown-menu, header .secciones .dropdown {
+  background-color: rgba(120, 78, 59, 0.7);
+  border: 0;
+  border-radius: 0;
+  z-index: 1;
+}
+
+header .secciones .dropdown-toggle::after {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  header .secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
