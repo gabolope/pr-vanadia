@@ -234,4 +234,133 @@ header .secciones .dropdown-toggle::after {
 #secciones #sweaters {
   background-color: #784E3B;
 }
+
+.moodVanadia {
+  color: #784E3B;
+  letter-spacing: 10px;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .moodVanadia {
+    font-size: 1.5rem;
+  }
+}
+
+.sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sociales .social {
+  position: relative;
+  background-color: black;
+  height: 125px;
+  width: 125px;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+@media all and (min-width: 350px) {
+  .sociales .social {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media all and (min-width: 450px) {
+  .sociales .social {
+    height: 175px;
+    width: 175px;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .sociales .social {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .sociales .social {
+    height: 225px;
+    width: 225px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .sociales .social {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.sociales .social img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 3rem;
+  z-index: 2;
+}
+
+.sociales .social::after {
+  content: "";
+  background-color: #bbbbbb;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.sociales .instagram {
+  background-image: url(/media/sociales/3.jpg);
+}
+
+.sociales .facebook {
+  background-image: url(/media/sociales/1.jpg);
+}
+
+.sociales .whatsapp {
+  background-image: url(/media/sociales/2.jpg);
+}
+
+#footer {
+  min-height: 150px;
+  background-color: #784E3B;
+  margin-top: 1rem;
+  color: #F8F4F4;
+}
+
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer #footerSociales {
+  position: relative;
+}
+
+#footer #footerSociales img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 3rem;
+}
 /*# sourceMappingURL=styles.css.map */
