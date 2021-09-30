@@ -1,0 +1,70 @@
+.moodVanadia{
+    color: $color-main;
+    letter-spacing: 10px;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @media all and (min-width:768px) {
+        font-size: 1.5rem;        
+    }
+}
+.sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .social{
+        position: relative;
+        background-color: black;
+        height: 125px;
+        width: 125px;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+        @media all and (min-width:350px) {
+            height: 150px;
+            width: 150px;        
+        }
+        @media all and (min-width:450px) {
+            height: 175px;
+            width: 175px;        
+        }
+        @media all and (min-width:500px) {
+            height: 200px;
+            width: 200px;        
+        }
+        @media all and (min-width:768px) {
+            height: 225px;
+            width: 225px;        
+        }
+        @media all and (min-width: 992px) {
+            height: 250px;
+            width: 250px;        
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 3rem;
+            z-index: 2;
+        }
+        &::after{
+            content: "";
+            background-color: rgb(187, 187, 187);
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            mix-blend-mode: darken;
+        }
+    }
+    .instagram{
+        background-image: url(/media/sociales/3.jpg);
+    }
+    .facebook{
+        background-image: url(/media/sociales/1.jpg);
+    }
+    .whatsapp{
+        background-image: url(/media/sociales/2.jpg);
+    }
+}
