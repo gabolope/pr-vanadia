@@ -1,0 +1,25 @@
+#secciones{
+    
+    .seccion{
+        width: 60vw;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        color: $color-white;
+        letter-spacing: 7px;
+        @media all and (min-width: 768px){
+            height: 150px;
+        }
+    }
+    #nuevo{
+        background-color: $color-main;
+    }
+    #remeras{
+        background-color: $color-secondary;
+    }
+    #sweaters{
+        background-color: $color-main;
+    }
+}
