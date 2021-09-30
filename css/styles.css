@@ -2,14 +2,207 @@
   font-family: "Vogue";
   src: url(../../media/fonts/Vogue.ttf);
 }
+html {
+  font-size: 62, 5%;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
 /* Colores */
 /* Fuentes */
-@font-face {
-  font-family: "Vogue";
-  src: url(../../media/fonts/Vogue.ttf);
+.titularProductos h2,
+.titularProductos h3, * {
+  font-family: "Poppins", sans-serif;
 }
-header nav .navbar__logo a {
-  font-family: Poppins;
+
+header {
+  background-color: #784E3B;
+}
+header .navbar {
+  display: block;
+  z-index: 5;
+}
+header .logo {
+  font-family: "Vogue";
+  color: #F8F4F4;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+header .logo:hover {
+  text-decoration: none;
+}
+header .flexPadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .flexPadre .invisibleItem {
+  visibility: hidden;
+}
+header .navbar-toggler, header .navbar-dark, header .hamburger {
+  border-color: transparent !important;
+}
+header .navbar-toggler:focus, header .navbar-dark:focus, header .hamburger:focus {
+  outline: none;
+}
+header .secciones {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+header .secciones a {
+  color: #F8F4F4;
+}
+header .secciones .dropdown-menu, header .secciones .dropdown {
+  background-color: rgba(120, 78, 59, 0.7);
+  border: 0;
+  border-radius: 0;
+  z-index: 1;
+}
+header .secciones .dropdown-toggle::after {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  header .secciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Colores */
+/* Fuentes */
+.titularProductos h2,
+.titularProductos h3, * {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Carrusel */
+.containerCarruselProductos {
+  display: flex;
+}
+.containerCarruselProductos .carousel-inner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.imgCarruselCompletas {
+  width: 100%;
+  display: flex;
+}
+.imgCarruselCompletas ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.imgCarruselCompletas ul li {
+  margin: 1vh 0;
+}
+.imgCarruselCompletas ul li a img {
+  width: 30vw;
+}
+
+.titularProductos {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1vh 0;
+}
+.titularProductos h2,
+.titularProductos h3 {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin: 0 auto;
+}
+.titularProductos h2 {
+  font-size: 1.1rem;
+  padding-bottom: 1vh;
+}
+.titularProductos h3 {
+  font-size: 0.9rem;
+}
+.titularProductos h4 {
+  font-size: 0.8rem;
+  margin: 3vh 4vw auto;
+}
+
+.detallesProductos {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 2vh 2vw;
+}
+.detallesProductos .detallesProductos__talle,
+.detallesProductos .detallesProductos__colores {
+  width: 45%;
+}
+.detallesProductos .detallesProductos__talle h3,
+.detallesProductos .detallesProductos__colores h3 {
+  font-size: 1rem;
+}
+.detallesProductos .detallesProductos__talle ol,
+.detallesProductos .detallesProductos__colores ol {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.detallesProductos .detallesProductos__talle ol li,
+.detallesProductos .detallesProductos__colores ol li {
+  background: #C4C4C4;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tablaDeTalles {
+  color: #3a626a;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin: 0 5vw;
+}
+
+.pedidoWhatsapp {
+  width: 100%;
+  display: flex;
+  margin: 2vh 0;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.pedidoWhatsapp h3 {
+  font-size: 1rem;
+}
+.pedidoWhatsapp h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #F8F4F4;
+  font-size: 1.2rem;
+  background: #00bb2e;
+  border-radius: 40px;
+  padding: 0.8rem 3rem;
+}
+.pedidoWhatsapp h2 .bx {
+  font-size: 1.5rem;
+  padding: auto 0 0;
+  margin: 0 0 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,13 @@
+* {
+    @extend %font-main;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+ul, ol {
+    li {
+        list-style: none;
+    }
+}
