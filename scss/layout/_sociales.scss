@@ -9,37 +9,37 @@
         font-size: 1.5rem;        
     }
 }
-.sociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#sociales{
     .social{
         position: relative;
         background-color: black;
         height: 125px;
-        width: 125px;
         background-position: center;
         background-size: cover;
         z-index: 1;
         @media all and (min-width:350px) {
-            height: 150px;
-            width: 150px;        
+            height: 150px;    
         }
         @media all and (min-width:450px) {
-            height: 175px;
-            width: 175px;        
+            height: 175px;                 
         }
         @media all and (min-width:500px) {
-            height: 200px;
-            width: 200px;        
+            height: 200px;                   
+        }
+        @media all and (min-width:600px) {
+            height: 250px;                   
         }
         @media all and (min-width:768px) {
-            height: 225px;
-            width: 225px;        
+            height: 225px;      
         }
         @media all and (min-width: 992px) {
-            height: 250px;
-            width: 250px;        
+            height: 250px;                   
+        }
+        @media all and (min-width: 1112px) {
+            height: 275px;                   
+        }
+        @media all and (min-width: 1250px) {
+            height: 300px;                   
         }
         img{
             position: absolute;

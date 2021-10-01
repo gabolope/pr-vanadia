@@ -198,9 +198,34 @@ header .secciones .dropdown-toggle::after {
           transform: rotate(270deg);
 }
 
+.textoDestacado {
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 7px;
+}
+
+@media all and (min-width: 768px) {
+  #secciones .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 #secciones .seccion {
-  width: 60vw;
   height: 75px;
+  color: #F8F4F4;
+  letter-spacing: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,13 +238,26 @@ header .secciones .dropdown-toggle::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #F8F4F4;
-  letter-spacing: 7px;
 }
 
 @media all and (min-width: 768px) {
   #secciones .seccion {
-    height: 150px;
+    height: 200px;
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #secciones .seccion {
+    height: 250px;
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (min-width: 1120px) {
+  #secciones .seccion {
+    height: 300px;
+    font-size: 1.5rem;
   }
 }
 
@@ -250,64 +288,64 @@ header .secciones .dropdown-toggle::after {
   }
 }
 
-.sociales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.sociales .social {
+#sociales .social {
   position: relative;
   background-color: black;
   height: 125px;
-  width: 125px;
   background-position: center;
   background-size: cover;
   z-index: 1;
 }
 
 @media all and (min-width: 350px) {
-  .sociales .social {
+  #sociales .social {
     height: 150px;
-    width: 150px;
   }
 }
 
 @media all and (min-width: 450px) {
-  .sociales .social {
+  #sociales .social {
     height: 175px;
-    width: 175px;
   }
 }
 
 @media all and (min-width: 500px) {
-  .sociales .social {
+  #sociales .social {
     height: 200px;
-    width: 200px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  #sociales .social {
+    height: 250px;
   }
 }
 
 @media all and (min-width: 768px) {
-  .sociales .social {
+  #sociales .social {
     height: 225px;
-    width: 225px;
   }
 }
 
 @media all and (min-width: 992px) {
-  .sociales .social {
+  #sociales .social {
     height: 250px;
-    width: 250px;
   }
 }
 
-.sociales .social img {
+@media all and (min-width: 1112px) {
+  #sociales .social {
+    height: 275px;
+  }
+}
+
+@media all and (min-width: 1250px) {
+  #sociales .social {
+    height: 300px;
+  }
+}
+
+#sociales .social img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -317,7 +355,7 @@ header .secciones .dropdown-toggle::after {
   z-index: 2;
 }
 
-.sociales .social::after {
+#sociales .social::after {
   content: "";
   background-color: #bbbbbb;
   position: absolute;
@@ -326,15 +364,15 @@ header .secciones .dropdown-toggle::after {
   mix-blend-mode: darken;
 }
 
-.sociales .instagram {
+#sociales .instagram {
   background-image: url(/media/sociales/3.jpg);
 }
 
-.sociales .facebook {
+#sociales .facebook {
   background-image: url(/media/sociales/1.jpg);
 }
 
-.sociales .whatsapp {
+#sociales .whatsapp {
   background-image: url(/media/sociales/2.jpg);
 }
 

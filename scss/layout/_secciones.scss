@@ -1,15 +1,31 @@
 #secciones{
+    @media all and (min-width: 768px){
+        .row{
+            display: flex; 
+            flex-direction: row;    
+            justify-content: space-between;
+            
+        }
+    }
     .seccion{
-        width: 60vw;
         height: 75px;
+        color: $color-white;
+        letter-spacing: 7px;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        color: $color-white;
-        letter-spacing: 7px;
         @media all and (min-width: 768px){
-            height: 150px;
+            height: 200px;
+            font-size: 1.25rem;          
+        }
+        @media all and (min-width: 992px){
+            height: 250px;     
+            font-size: 1.5rem;      
+        }
+        @media all and (min-width: 1120px){
+            height: 300px;     
+            font-size: 1.5rem;      
         }
     }
     #nuevo{
@@ -22,4 +38,5 @@
         background-color: $color-main;
     }
 }
+
 //TODO: ajustar el ancho para que sea el mismo que el de sociales
