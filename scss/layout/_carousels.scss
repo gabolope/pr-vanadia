@@ -11,13 +11,13 @@
         background-size: cover;
     }
     .catalogo1{
-        background-image: url(/media/carousel/carouselCatalogo1.jpg);
+        background-image: url(../media/carousel/carouselCatalogo1.jpg);
     }
     .catalogo2{
-        background-image: url(/media/carousel/carouselCatalogo2.jpg);
+        background-image: url(../media/carousel/carouselCatalogo2.jpg);
     }
     .catalogo3{
-        background-image: url(/media/carousel/carouselCatalogo3.jpg);
+        background-image: url(../media/carousel/carouselCatalogo3.jpg);
     }
     .carouselCaptionCatalogo{
         color: $color-white;
@@ -67,11 +67,11 @@
         width: 60vw;
     }
     .carousel-control-prev-icon{
-        background-image: url("/media/carousel/arrow.png");
+        background-image: url("../media/carousel/arrow.png");
         transform: rotate(90deg);
     }
     .carousel-control-next-icon{
-        background-image: url("/media/carousel/arrow.png");
+        background-image: url("../media/carousel/arrow.png");
         transform: rotate(270deg);
     }
 }

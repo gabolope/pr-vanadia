@@ -127,15 +127,15 @@ header .secciones .dropdown-toggle::after {
 }
 
 #carouselCatalogo .catalogo1 {
-  background-image: url(/media/carousel/carouselCatalogo1.jpg);
+  background-image: url(../media/carousel/carouselCatalogo1.jpg);
 }
 
 #carouselCatalogo .catalogo2 {
-  background-image: url(/media/carousel/carouselCatalogo2.jpg);
+  background-image: url(../media/carousel/carouselCatalogo2.jpg);
 }
 
 #carouselCatalogo .catalogo3 {
-  background-image: url(/media/carousel/carouselCatalogo3.jpg);
+  background-image: url(../media/carousel/carouselCatalogo3.jpg);
 }
 
 #carouselCatalogo .carouselCaptionCatalogo {
@@ -187,13 +187,13 @@ header .secciones .dropdown-toggle::after {
 }
 
 #carouselDestacados .carousel-control-prev-icon {
-  background-image: url("/media/carousel/arrow.png");
+  background-image: url("../media/carousel/arrow.png");
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
 #carouselDestacados .carousel-control-next-icon {
-  background-image: url("/media/carousel/arrow.png");
+  background-image: url("../media/carousel/arrow.png");
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
@@ -365,15 +365,15 @@ header .secciones .dropdown-toggle::after {
 }
 
 #sociales .instagram {
-  background-image: url(/media/sociales/3.jpg);
+  background-image: url(../media/sociales/3.jpg);
 }
 
 #sociales .facebook {
-  background-image: url(/media/sociales/1.jpg);
+  background-image: url(../media/sociales/1.jpg);
 }
 
 #sociales .whatsapp {
-  background-image: url(/media/sociales/2.jpg);
+  background-image: url(../media/sociales/2.jpg);
 }
 
 #footer {
