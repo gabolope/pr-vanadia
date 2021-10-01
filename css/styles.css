@@ -323,7 +323,7 @@ header .secciones .dropdown-toggle::after {
   position: absolute;
   inset: 0;
   z-index: -1;
-  mix-blend-mode: multiply;
+  mix-blend-mode: darken;
 }
 
 .sociales .instagram {
@@ -345,22 +345,54 @@ header .secciones .dropdown-toggle::after {
   color: #F8F4F4;
 }
 
+#footer h4 {
+  font-size: 1rem;
+}
+
 #footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#footer #footerSociales {
-  position: relative;
+#footer ul li {
+  font-size: .6rem;
 }
 
-#footer #footerSociales img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 3rem;
+#footer #footerSociales h4 {
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+#footer #footerSociales .flexFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+#footer #footerSociales .flexFooter img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 2rem;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

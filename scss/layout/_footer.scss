@@ -3,19 +3,37 @@
     background-color: $color-main;
     margin-top: 1rem;
     color: $color-white;
+    h4{
+        font-size: 1rem;
+
+    }
     ul{
         list-style: none;
         margin: 0;
         padding: 0;
+        li{
+            font-size: .6rem;
+        }
     }
     #footerSociales{
-        position: relative;
-        img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 3rem;
+        h4{
+            font-weight: 800;
+            letter-spacing: 10px;
+            text-align: center;
+        }
+        .flexFooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1rem;
+            img{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                width: 2rem;
+                margin: auto;
+            }
         }
     }
 }
