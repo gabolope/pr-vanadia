@@ -10,17 +10,19 @@
         width: 60%;
         margin: 0 auto;
     }
+
+    .carousel-control-prev-icon {
+        background-image: url("../../media/carousel/arrow.png");
+        transform: rotate(90deg);
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../../media/carousel/arrow.png");
+        transform: rotate(-90deg);
+    }
 }
 
-.carousel-control-prev-icon {
-    background-image: url("../../media/carousel/arrow.png");
-    transform: rotate(90deg);
-}
 
-.carousel-control-next-icon {
-    background-image: url("../../media/carousel/arrow.png");
-    transform: rotate(-90deg);
-}
 
 
 
