@@ -8,8 +8,7 @@ ehthumbs_vista.db
 
 # Folder config file
 Desktop.ini
-./modelos
-
+node_modules
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
@@ -18,6 +17,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.json
 
 # Windows shortcuts
 *.lnk
