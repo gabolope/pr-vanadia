@@ -14,6 +14,17 @@ ul li, ol li {
 .bodyProductos .mainProductos .seccionDetalles .titularProductos h3 {
   font-family: 'Poppins', sans-serif; }
 
+.mainAbout section .sobreVanadia h2, .mainAbout section .lema section article h2 {
+  font-family: 'Vogue', serif; }
+
+/* Formatos de texto */
+.mainAbout section .presentacion p, .mainAbout section .queHacemos p, .mainAbout section .lema {
+  padding: 6% 10%;
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px; }
+
 body {
   background-color: #F9ECE6; }
 
@@ -275,6 +286,17 @@ header {
 .bodyProductos .mainProductos .seccionDetalles .titularProductos h3 {
   font-family: 'Poppins', sans-serif; }
 
+.mainAbout section .sobreVanadia h2, .mainAbout section .lema section article h2 {
+  font-family: 'Vogue', serif; }
+
+/* Formatos de texto */
+.mainAbout section .presentacion p, .mainAbout section .queHacemos p, .mainAbout section .lema {
+  padding: 6% 10%;
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px; }
+
 .bodyProductos {
   background: #F8F4F4; }
   @media (min-width: 800px) {
@@ -310,7 +332,8 @@ header {
         transform: rotate(-90deg); }
     .bodyProductos .mainProductos .seccionImagenes .imgCarruselCompletas {
       width: 60%;
-      display: flex; }
+      display: flex;
+      margin: 0 auto; }
       @media (min-width: 800px) {
         .bodyProductos .mainProductos .seccionImagenes .imgCarruselCompletas {
           padding: 2vh 0; } }
@@ -326,7 +349,7 @@ header {
           .bodyProductos .mainProductos .seccionImagenes .imgCarruselCompletas ul {
             justify-content: start; } }
         .bodyProductos .mainProductos .seccionImagenes .imgCarruselCompletas ul li {
-          margin: 1vh 0; }
+          margin: 1vh 2vw; }
           @media (min-width: 800px) {
             .bodyProductos .mainProductos .seccionImagenes .imgCarruselCompletas ul li {
               margin: 0 2vw 0 0; } }
@@ -460,3 +483,88 @@ header {
         font-size: 1.5rem;
         padding: auto 0 0;
         margin: 0 0 0 1rem; }
+
+/* Colores */
+/* Fuentes */
+*, body, .tituloDestacados, .bodyProductos .mainProductos .seccionDetalles .titularProductos h2,
+.bodyProductos .mainProductos .seccionDetalles .titularProductos h3 {
+  font-family: 'Poppins', sans-serif; }
+
+.mainAbout section .sobreVanadia h2, .mainAbout section .lema section article h2 {
+  font-family: 'Vogue', serif; }
+
+/* Formatos de texto */
+.mainAbout section .presentacion p, .mainAbout section .queHacemos p, .mainAbout section .lema {
+  padding: 6% 10%;
+  font-weight: 700;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px; }
+
+.mainAbout {
+  background-color: #F8F4F4; }
+  .mainAbout section .sobreVanadia {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4aba2;
+    padding: 1rem 0 .6rem;
+    color: #F8F4F4;
+    letter-spacing: 10px; }
+    .mainAbout section .sobreVanadia h2 {
+      font-size: 2.5rem; }
+  @media (min-width: 800px) {
+    .mainAbout section .presentacion p {
+      padding: 3% 5%; } }
+  .mainAbout section .queHacemos {
+    background-color: #c4aba2; }
+    @media (min-width: 800px) {
+      .mainAbout section .queHacemos p {
+        padding: 3% 5%; } }
+  @media (min-width: 800px) {
+    .mainAbout section .lema {
+      padding: 2% 5%; } }
+  .mainAbout section .lema h3 {
+    font-size: 1rem;
+    padding: 0 0 1rem; }
+  .mainAbout section .lema h2 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    padding: 0 0 1rem; }
+  .mainAbout section .lema p {
+    font-weight: 300; }
+  .mainAbout section .lema section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+    @media (min-width: 800px) {
+      .mainAbout section .lema section {
+        justify-content: center; } }
+    .mainAbout section .lema section article {
+      display: none; }
+      .mainAbout section .lema section article h2 {
+        padding: 0;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 2rem;
+        letter-spacing: 10px; }
+      @media (min-width: 800px) {
+        .mainAbout section .lema section article {
+          background-color: #784E3B;
+          color: white;
+          width: 30vh;
+          height: 30vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 1vw; } }
+    .mainAbout section .lema section img {
+      width: 15vh;
+      height: 15vh;
+      object-fit: cover; }
+      @media (min-width: 800px) {
+        .mainAbout section .lema section img {
+          width: 30vh;
+          height: 30vh; } }

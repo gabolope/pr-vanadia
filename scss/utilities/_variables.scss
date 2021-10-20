@@ -4,6 +4,7 @@ $color-secondary: #A87272;
 $color-white: #F8F4F4;
 $color-accent: #49C7EF;
 $color-background: #F9ECE6;
+$color-background-secondary: #c4aba2;
 $color-btn: #C7C7C7;
 $color-link: #113CFC;
 
@@ -14,4 +15,13 @@ $color-link: #113CFC;
 }
 %font-logo {
     font-family: 'Vogue', serif;
+}
+
+/* Formatos de texto */
+%format-about {
+    padding: 6% 10%;
+    font-weight: 700;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
