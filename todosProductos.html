@@ -25,34 +25,161 @@
 
 <body>
     <!-- Navbar de Bootstrap -->
-
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark p-0">
+            <div class="flexPadre">
+                <div class="hamburguer">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="titulo">
+                    <section class="mt-3 mb-3 mb-md-0">
+                        <a class="logo" href="index.html">VANADIA</a>
+                    </section>
+                </div>
+                <div class="hamburguer invisibleItem">
+                    <!-- Boton invisible para alinear título-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse flexPadre secciones mt-0 mb-0" id="navbarSupportedContent">
+                <div class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="remeras.html">Remeras y tops</a>
+                        <a class="dropdown-item" href="sweaters.html">Sweaters</a>
+                        <a class="dropdown-item" href="pantalones.html">Pantalones</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="todosProductos.html">Todos los productos</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre la marca</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- Todos los productos -->
-    <div class="container">
+    <div class="container mt-3">
+        <div class="categoriaProducto row">
+            <h3 class="col-12 categoriaTitulo">Remeras y tops</h3>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+        </div>
+        <div class="categoriaProducto row">
+            <h3 class="col-12 categoriaTitulo">Sweaters</h3>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
+                <p class="precioProducto">$1950</p>
+            </div>
+        </div>
         <div class="categoriaProducto row">
             <h3 class="col-12 categoriaTitulo">Jeans</h3>
             <div class="col-6 col-md-3">
-                <img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid">
-                <h3 class="textoProducto">Jean Mom Dua</h3>
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
                 <p class="precioProducto">$1950</p>
             </div>
             <div class="col-6 col-md-3">
-                <img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid">
-                <h3 class="textoProducto">Jean Mom Dua</h3>
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
                 <p class="precioProducto">$1950</p>
             </div>
             <div class="col-6 col-md-3">
-                <img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid">
-                <h3 class="textoProducto">Jean Mom Dua</h3>
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
                 <p class="precioProducto">$1950</p>
             </div>
             <div class="col-6 col-md-3">
-                <img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid">
-                <h3 class="textoProducto">Jean Mom Dua</h3>
+                <a href="detallesProductos.html" target="_blank"><img src="media/carousel/destacados/1.jpg" alt="Jean Mom Dua" class="img-fluid"></a>
+                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Mom Dua</h3></a>
                 <p class="precioProducto">$1950</p>
             </div>
         </div>
     </div>
-
     <!-- Footer -->
+    <div id="footer" class="container-fluid pt-4">
+        <div class="row d-flex pb-3">
+            <div id="footerContacto" class="order-2 order-md-1 col-6 col-md-3 mx-auto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>vanadia.shops@gmail.com</li>
+                    <li>Zona: Don Torcuato</li>
+                    <li>Envíos a todo Bs. As.</li>
+                </ul>
+            </div>
+            <div id="footerSociales" class="order-1 order-md-2 col-12 col-md-6 mb-3">
+                <h4>Nuestras Redes</h4>
+                <div class="row flexFooter">
+                    <div class="col-3">
+                        <a href="https://wa.me/c/5491157543426" target="blank"><img src="media/icons/whatsapp.svg" alt="Whatsapp"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="https://www.instagram.com/vanadia_ind/" target="blank"><img src="media/icons/instagram.svg" alt="Instagram"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=" https://www.facebook.com/Vanadia.Shops/" target="blank"><img src="media/icons/facebook.svg" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footerInfo" class="order-3 order-md-3 col-6 col-md-3 mx-auto">
+                <h4>Más información</h4>
+                <ul>
+                    <li>Métodos de envío</li>
+                    <li>Métodos de pago</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

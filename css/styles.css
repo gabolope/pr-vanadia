@@ -105,6 +105,13 @@ header .secciones {
 
 header .secciones a {
   color: #F8F4F4;
+  letter-spacing: 4px;
+}
+
+@media all and (min-width: 768px) {
+  header .secciones a {
+    font-size: 1.1rem;
+  }
 }
 
 header .secciones .dropdown-menu, header .secciones .dropdown {
@@ -112,6 +119,15 @@ header .secciones .dropdown-menu, header .secciones .dropdown {
   border: 0;
   border-radius: 0;
   z-index: 1;
+}
+
+header .secciones .dropdown-menu .dropdown-item, header .secciones .dropdown .dropdown-item {
+  color: #F8F4F4;
+  font-size: .9rem;
+}
+
+header .secciones .dropdown-menu .dropdown-item:hover, header .secciones .dropdown .dropdown-item:hover {
+  background-color: #784E3B;
 }
 
 header .secciones .dropdown-toggle::after {
@@ -133,6 +149,16 @@ header .secciones .dropdown-toggle::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media all and (max-width: 767px) {
+  header .secciones .dropdown-menu {
+    background-color: #784e3b;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  header .secciones .dropdown-menu .dropdown-item {
+    padding-left: 1rem;
   }
 }
 
@@ -1018,6 +1044,10 @@ header .secciones .dropdown-toggle::after {
   font-weight: 1000;
   font-size: 2.5rem;
   letter-spacing: 15px;
+}
+
+.categoriaProducto a:hover {
+  text-decoration: none;
 }
 
 .categoriaProducto .textoProducto {

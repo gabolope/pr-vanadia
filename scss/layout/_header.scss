@@ -33,13 +33,24 @@ header{
     .secciones{
         font-family: "Poppins";
         a{
-            color: $color-white
+            color: $color-white;
+            letter-spacing: 4px;
+            @media all and (min-width: 768px){
+                font-size: 1.1rem;
+            }
         }
         .dropdown-menu, .dropdown{
             background-color: rgba($color: #784E3B, $alpha: .7);
             border: 0;
             border-radius: 0;
             z-index: 1;
+            .dropdown-item{
+                color: $color-white;
+                font-size: .9rem;
+                &:hover{
+                    background-color: $color-main;
+                }
+            }
         }
         .dropdown-toggle::after{
             display: none;
@@ -54,6 +65,16 @@ header{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+        }
+        .dropdown-menu{
+            @media all and (max-width:767px){
+                background-color: rgba($color: #784E3B, $alpha: 1);
+                border: 1px solid rgba($color: #ffffff, $alpha: .3);
+                .dropdown-item{
+                    padding-left: 1rem;
+
+                }
+            }
         }
     }
 }

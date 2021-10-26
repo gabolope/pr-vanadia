@@ -6,6 +6,11 @@
         font-size: 2.5rem;
         letter-spacing: 15px;
     }
+    a{
+        &:hover{
+            text-decoration: none;
+        }
+    }
     .textoProducto{
         @extend .textoDestacado;
         margin-bottom: 0;
