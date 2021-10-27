@@ -1,37 +1,48 @@
-.mainContact {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+.bodyContacto {
 
-    #titularContact {
-        font-size: 1.5rem;
-        margin: 2rem;
-        color: $color-secondary;
-        font-weight: 700;
-        letter-spacing: 10px;
-    }
+    .mainContact {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
 
-    .redesContact {
-        display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-        width: 85vw;
+        @media (min-width: 800px) {
+            background-color: $color-white;
+        }
+    
+        #titularContact {
+            font-size: 1.5rem;
+            margin: 2rem;
+            color: $color-secondary;
+            font-weight: 700;
+            letter-spacing: 10px;
 
-        section {
-            width: 100%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: flex-start;
-
+            @media (min-width: 800px) {
+                margin: 5% 0;
+            }
+        }
+    
+        .redesContact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            width: 85vw;
+    
+            @media (min-width: 800px) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                align-items: flex-start;
+                margin: 5% 0;
+            }
+    
             article {
-                min-width: 40vw;
                 display: flex;
                 flex-flow: column nowrap;
                 align-items: center;
                 justify-content: center;
                 margin: 0 0 5vh;
-
+    
                 a {
                     background: $color-secondary;
                     border-radius: 50%;
@@ -39,11 +50,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
+    
                     img {
                         width: 15vw;
+
+                        @media (min-width: 800px) {
+                            width: 5vw;
+                        }
                     }
                 }
+    
                 h3 {
                     width: 100%;
                     font-size: 1rem;
@@ -57,23 +73,32 @@
                         font-weight: 700;
                     }
                 }
+
+                @media (min-wdith: 800px) {
+                    .gmail {
+                        
+                        br {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
-    }
-
-    .artSeguinos {
-        background: $color-main;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2.5vh;
-
-        h2 {
-            color: $color-white;
-            font-size: 1.3rem;
-            letter-spacing: 10px;
-            margin: 0;
+    
+        .artSeguinos {
+            background: $color-main;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2.5vh;
+    
+            h2 {
+                color: $color-white;
+                font-size: 1.3rem;
+                letter-spacing: 10px;
+                margin: 0;
+            }
         }
     }
 }

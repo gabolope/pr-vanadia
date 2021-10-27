@@ -7,7 +7,8 @@
   padding: 0; }
 
 html {
-  font-size: 62,5%; }
+  font-size: 62,5%;
+  overflow-x: hidden; }
 
 ul li, ol li {
   list-style: none; }
@@ -605,61 +606,74 @@ header {
 .categoriaProducto .precioProducto {
   margin-top: 0; }
 
-.mainContact {
+.bodyContacto .mainContact {
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
-  .mainContact #titularContact {
+  @media (min-width: 800px) {
+    .bodyContacto .mainContact {
+      background-color: #F8F4F4; } }
+  .bodyContacto .mainContact #titularContact {
     font-size: 1.5rem;
     margin: 2rem;
     color: #A87272;
     font-weight: 700;
     letter-spacing: 10px; }
-  .mainContact .redesContact {
+    @media (min-width: 800px) {
+      .bodyContacto .mainContact #titularContact {
+        margin: 5% 0; } }
+  .bodyContacto .mainContact .redesContact {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
     width: 85vw; }
-    .mainContact .redesContact section {
-      width: 100%;
+    @media (min-width: 800px) {
+      .bodyContacto .mainContact .redesContact {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        align-items: flex-start;
+        margin: 5% 0; } }
+    .bodyContacto .mainContact .redesContact article {
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: flex-start; }
-      .mainContact .redesContact section article {
-        min-width: 40vw;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 5vh; }
+      .bodyContacto .mainContact .redesContact article a {
+        background: #A87272;
+        border-radius: 50%;
+        padding: 5vw;
         display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
         justify-content: center;
-        margin: 0 0 5vh; }
-        .mainContact .redesContact section article a {
-          background: #A87272;
-          border-radius: 50%;
-          padding: 5vw;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          .mainContact .redesContact section article a img {
-            width: 15vw; }
-        .mainContact .redesContact section article h3 {
-          width: 100%;
-          font-size: 1rem;
-          display: inline;
-          color: #A87272;
-          font-weight: 400;
-          margin: 15px;
-          text-align: center; }
-          .mainContact .redesContact section article h3 .linkCatalogo {
-            font-weight: 700; }
-  .mainContact .artSeguinos {
+        align-items: center; }
+        .bodyContacto .mainContact .redesContact article a img {
+          width: 15vw; }
+          @media (min-width: 800px) {
+            .bodyContacto .mainContact .redesContact article a img {
+              width: 5vw; } }
+      .bodyContacto .mainContact .redesContact article h3 {
+        width: 100%;
+        font-size: 1rem;
+        display: inline;
+        color: #A87272;
+        font-weight: 400;
+        margin: 15px;
+        text-align: center; }
+        .bodyContacto .mainContact .redesContact article h3 .linkCatalogo {
+          font-weight: 700; }
+      @media (min-wdith: 800px) {
+        .bodyContacto .mainContact .redesContact article .gmail br {
+          display: none; } }
+  .bodyContacto .mainContact .artSeguinos {
     background: #784E3B;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2.5vh; }
-    .mainContact .artSeguinos h2 {
+    .bodyContacto .mainContact .artSeguinos h2 {
       color: #F8F4F4;
       font-size: 1.3rem;
       letter-spacing: 10px;
