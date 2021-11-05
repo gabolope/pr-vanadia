@@ -9,6 +9,7 @@
         max-height: 30vh;
         min-height: 200px;
         background-size: cover;
+        background-position: center;
     }
     .catalogo1{
         background-image: url(../media/carousel/carouselCatalogo1.jpg);
@@ -27,6 +28,7 @@
         right: 0;
         height: 100%;
         width: 100%;
+        text-shadow: 1px 1px black;
         font-size: "Poppins";
         .tituloCarouselCatalogo{
             font-size: 1.5rem;
