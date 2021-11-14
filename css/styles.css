@@ -490,6 +490,11 @@ header .secciones .dropdown-toggle::after {
   margin: auto;
 }
 
+#footer #footerInfo a {
+  color: #F8F4F4;
+  font-size: .7rem;
+}
+
 /* Colores */
 /* Fuentes */
 *, body, .tituloDestacados, .bodyProductos .mainProductos .seccionDetalles .titularProductos h2,
@@ -860,6 +865,10 @@ header .secciones .dropdown-toggle::after {
   }
 }
 
+.bodyProductos .mainProductos .seccionDetalles .pedidoWhatsapp a:hover {
+  text-decoration: none;
+}
+
 .bodyProductos .mainProductos .seccionDetalles .pedidoWhatsapp h3 {
   font-size: 1rem;
 }
@@ -878,6 +887,10 @@ header .secciones .dropdown-toggle::after {
   border-radius: 40px;
   padding: 0.8rem 3rem;
   text-align: center;
+}
+
+.bodyProductos .mainProductos .seccionDetalles .pedidoWhatsapp h2:hover {
+  background: #02e039;
 }
 
 @media (min-width: 800px) {
@@ -934,7 +947,7 @@ header .secciones .dropdown-toggle::after {
       -ms-flex-align: center;
           align-items: center;
   background-color: #c4aba2;
-  padding: 1rem 0 .6rem;
+  padding: 1rem 0 0.6rem;
   color: #F8F4F4;
   letter-spacing: 10px;
 }
@@ -1050,8 +1063,14 @@ header .secciones .dropdown-toggle::after {
   text-align: center;
   color: #784E3B;
   font-weight: 1000;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: 15px;
+}
+
+@media all and (min-width: 768px) {
+  .categoriaProducto .categoriaTitulo {
+    font-size: 2.5rem;
+  }
 }
 
 .categoriaProducto a:hover {
