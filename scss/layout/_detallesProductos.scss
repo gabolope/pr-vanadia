@@ -176,15 +176,21 @@
                 .detallesProductos__talle,
                 .detallesProductos__colores {
                     width: 45%;
-
+                    .d-hidden{
+                        visibility: hidden;
+                    }
                     h3 {
                         font-size: 1rem;
-
                         @media (min-width: 800px) {
                             font-size: 1.2rem;
                         }
                     }
-
+                    h4 {
+                        font-size: .7rem;
+                        @media (min-width: 800px) {
+                            font-size: .9rem;
+                        }
+                    }
                     ol {
                         width: 100%;
                         display: flex;
@@ -192,11 +198,9 @@
                         justify-content: space-between;
                         margin: 0;
                         padding: 0;
-
                         @media (min-width: 800px) {
                             padding: 0 40% 0 0;
                         }
-
                         li {
                             background: $color-btn;
                             width: 2rem;
@@ -205,7 +209,6 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-
                             @media (min-width: 800px) {
                                 font-size: 1rem;
                             }
@@ -213,7 +216,34 @@
                     }
                 }
 
-                .detallesProductos__colores {}
+                .detallesProductos__colores {
+                    .d-hidden{
+                        visibility: hidden;
+                    }
+                    .colorNegro{
+                        background-color: black;
+                    }
+                    .colorBlanco{
+                        background-color: white;
+                        border: 1px solid black;
+                    }
+                    .colorBeige{
+                        background-color: blanchedalmond;
+                        border: 1px solid black;
+                    }
+                    .colorRojo{
+                        background-color: red;
+                    }
+                    .colorGris{
+                        background-color: gray;
+                    }
+                    .colorRosa{
+                        background-color: pink;
+                    }
+                    .colorVerde{
+                        background-color: olive;
+                    }
+                }
             }
 
             .tablaDeTalles {

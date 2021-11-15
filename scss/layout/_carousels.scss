@@ -79,6 +79,13 @@
 }
 
 //Destacados Desktop
+.linkDestacado{
+    color: $color-white;
+    &:hover{
+        text-decoration: none;
+        color: $color-white;
+    }
+}
 .textoDestacado{
     text-align: center;
     margin-top: .5rem;
@@ -89,8 +96,4 @@
 }
 
 
-
-//TODO: bajar calidad de imágenes de ambos carouseles.
-//TODO: ajustar todas las imágenes del carousel de destacados a un mismo alto
-//TODO: adaptar a desktop
 
