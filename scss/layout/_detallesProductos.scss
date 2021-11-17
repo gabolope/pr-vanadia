@@ -29,17 +29,27 @@
 
             .containerCarruselProductos {
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-top: 3vh;
 
                 .carousel-inner {
-                    width: 60%;
+                    width: $width-carousel-mobile;
                     margin: 0 auto;
 
                     @media(min-width: 800px) {
+                        width: $width-carousel;
                         justify-content: center;
                         align-items: center;
                     }
 
+                    .productoDetalle__carrousel--img {
+                        width: $width-carousel-mobile;
+
+                        @media (min-width: 800px) {
+                            width: $width-carousel;
+                        }
+                    }
 
                 }
 
@@ -84,14 +94,10 @@
                             margin: 0 2vw 0 0;
                         }
 
-                        a {
-
-                            img {
-                                width: 30vw;
-
-                                @media(min-width: 800px) {
-                                    width: 8vw;
-                                }
+                        img {
+                            width: 30vw;
+                            @media(min-width: 800px) {
+                                width: 8vw;
                             }
                         }
                     }
