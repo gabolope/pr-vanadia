@@ -286,6 +286,11 @@ header {
   background-color: #784E3B;
   margin-top: 1rem;
   color: #F8F4F4; }
+  #footer div div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center; }
   #footer h4 {
     font-size: 1rem; }
   #footer ul {

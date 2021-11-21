@@ -3,6 +3,16 @@
     background-color: $color-main;
     margin-top: 1rem;
     color: $color-white;
+
+    div {
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
     h4{
         font-size: 1rem;
 
