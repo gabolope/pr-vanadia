@@ -93,16 +93,18 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <picture>
-                                <source media="(max-width: 576px)" srcset="../media/productos/topAgata/topAgata (1).jpg">
-                                <source media="(max-width: 992px)" srcset="../media/productos/topAgata/topAgata (1).jpg">
-                                <source media="(min-width: 993px)" srcset="../media/productos/topAgata/topAgata (1).jpg">
-                                <img src="../media/productos/topAgata/topAgata (1).jpg" class="d-block w-100 productoDetalle__carrousel--img" alt="Top Agata">
+                                <source srcset="../media/productos/topAgata/topAgata_1.webp">
+                                <img src="../media/productos/topAgata/topAgata_1.jpg"
+                                    class="d-block w-100 productoDetalle__carrousel--img" alt="Top Agata">
                             </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="../media/productos/topAgata/topAgata (2).jpg"
+                            <picture>
+                                <source srcset="../media/productos/topAgata/topAgata_2.webp">
+                                <img src="../media/productos/topAgata/topAgata_2.jpg"
                                 class="d-block w-100 productoDetalle__carrousel--img" alt="Top Agata">
-                        </div>
+                            </picture>
+                        </div> 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -118,8 +120,20 @@
             <!-- Imagenes completas del carrusel -->
             <section class="imgCarruselCompletas">
                 <ul>
-                    <li><a href=""><img src="../media/productos/topAgata/topAgata (1).jpg" alt="Top Agata"></a></li>
-                    <li><a href=""><img src="../media/productos/topAgata/topAgata (2).jpg" alt="Top Agata"></a></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <picture>
+                            <source srcset="../media/productos/topAgata/topAgata_1.webp">
+                            <img src="../media/productos/topAgata/topAgata_1.jpg"
+                                class="imgCarruselCompletas" alt="Top Agata">
+                        </picture>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <picture>
+                            <source srcset="../media/productos/topAgata/topAgata_2.webp">
+                            <img src="../media/productos/topAgata/topAgata_2.jpg"
+                            class="imgCarruselCompletas" alt="Top Agata">
+                        </picture>
+                    </li>                 
                 </ul>
             </section>
         </section>

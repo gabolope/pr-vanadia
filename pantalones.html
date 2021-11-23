@@ -20,10 +20,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-    <title>Pantalones - Vanadía Indumentaria</title>
+    <title>Vanadía Indumentaria</title>
 </head>
-<body>
 
+<body>
+    <!-- Navbar de Bootstrap -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark p-0">
             <div class="flexPadre">
@@ -73,16 +74,16 @@
             </div>
         </nav>
     </header>
-    
-    <main class="mainCompleto">
-        <div class="categoriaProducto row mt-3">
+    <!-- Todos los productos -->
+    <div class="container mt-3">
+        <div class="categoriaProducto row">
             <h3 class="col-12 categoriaTitulo">Jeans</h3>
             <div class="col-8 mx-auto col-md-4 col-lg-3">
                 <a href="productos\jeanMomDua.html" target="_blank">
                     <picture>
-                        <source srcset="../media/productos/jeanMomdua/jeanMomdua_2.webp">
-                        <img src="../media/productos/jeanMomdua/jeanMomdua_2.jpg"
-                        class="img-fluid" alt="Jean Mom Dua">
+                        <source srcset="media/productos/jeanMomdua/jeanMomdua_1.webp">
+                        <img src="media/productos/jeanMomdua/jeanMomdua_1.jpg"
+                            class="img-fluid" alt="Jean Mom Dua">
                     </picture>
                 </a>
                 <a href="productos\jeanMomDua.html" target="_blank">
@@ -91,13 +92,21 @@
                 <p class="precioProducto">$1950</p>
             </div>
             <div class="col-8 mx-auto col-md-4 col-lg-3">
-                <a href="detallesProductos.html" target="_blank"><img src="media/productos/jeanTowerCeleste/jeanTowerCeleste (3).jpg" alt="Jean Mom Dua" class="img-fluid"></a>
-                <a href="detallesProductos.html" target="_blank"><h3 class="textoProducto">Jean Tower Roto</h3></a>
+                <a href="productos/jeanTower.html" target="_blank">
+                    <picture>
+                        <source srcset="media/productos/jeanTowerCeleste/jeanTowerCeleste_1.webp">
+                        <img src="media/productos/jeanTowerCeleste/jeanTowerCeleste_1.jpg"
+                            class="img-fluid" alt="Jean Tower Celeste">
+                    </picture>
+                </a>
+                <a href="productos/jeanTower.html" target="_blank">
+                    <h3 class="textoProducto">Jean Tower Roto</h3>
+                </a>
                 <p class="precioProducto">$1800</p>
             </div>
         </div>
-    </main>
-
+    </div>
+    <!-- Footer -->
     <div id="footer" class="container-fluid pt-4">
         <div class="row d-flex pb-3">
             <div id="footerContacto" class="order-2 order-md-1 col-6 col-md-3 mx-auto">

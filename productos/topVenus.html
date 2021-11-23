@@ -89,24 +89,22 @@
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <picture>
-                                <source media="(max-width: 576px)" srcset="../media/productos/topVenus/topVenus (1).jpg">
-                                <source media="(max-width: 992px)" srcset="../media/productos/topVenus/topVenus (1).jpg">
-                                <source media="(min-width: 993px)" srcset="../media/productos/topVenus/topVenus (1).jpg">
-                                <img src="../media/productos/topVenus/topVenus (1).jpg" class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venus">
+                                <source srcset="../media/productos/topVenus/topVenus_1.webp">
+                                <img src="../media/productos/topVenus/topVenus_1.jpg"
+                                    class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venus">
                             </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="../media/productos/topVenus/topVenus (2).jpg"
+                            <picture>
+                                <source srcset="../media/productos/topVenus/topVenus_2.webp">
+                                <img src="../media/productos/topVenus/topVenus_2.jpg"
                                 class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venus">
+                            </picture>
                         </div>
-                        <div class="carousel-item">
-                            <img src="../media/productos/topVenus/topVenus (3).jpg" class="d-block w-100" alt="Top Venus">
-                        </div> 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -122,9 +120,20 @@
             <!-- Imagenes completas del carrusel -->
             <section class="imgCarruselCompletas">
                 <ul>
-                    <li><a href=""><img src=".../media/productos/topVenus/topVenus (1).jpg" alt=""></a></li>
-                    <li><a href=""><img src="../media/productos/topVenus/topVenus (2).jpg" alt=""></a></li>
-                    <li><a href=""><img src="../media/productos/topVenus/topVenus (3).jpg" alt=""></a></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <picture>
+                            <source srcset="../media/productos/topVenus/topVenus_1.webp">
+                            <img src="../media/productos/topVenus/topVenus_1.jpg"
+                                class="imgCarruselCompletas" alt="Top Venus">
+                        </picture>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <picture>
+                            <source srcset="../media/productos/topVenus/topVenus_2.webp">
+                            <img src="../media/productos/topVenus/topVenus_2.jpg"
+                            class="imgCarruselCompletas" alt="Top Venus">
+                        </picture>
+                    </li>                  
                 </ul>
             </section>
         </section>

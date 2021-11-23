@@ -94,20 +94,25 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <picture>
-                                <source media="(max-width: 576px)" srcset="../media/productos/topVenera/topVenera (1).jpg">
-                                <source media="(max-width: 992px)" srcset="../media/productos/topVenera/topVenera (1).jpg">
-                                <source media="(min-width: 993px)" srcset="../media/productos/topVenera/topVenera (1).jpg">
-                                <img src="../media/productos/topVenera/topVenera (1).jpg" class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venera">
+                                <source srcset="../media/productos/topVenera/topVenera_1.webp">
+                                <img src="../media/productos/topVenera/topVenera_1.jpg"
+                                    class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venera">
                             </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="../media/productos/topVenera/topVenera (2).jpg"
+                            <picture>
+                                <source srcset="../media/productos/topVenera/topVenera_2.webp">
+                                <img src="../media/productos/topVenera/topVenera_2.jpg"
                                 class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venera">
+                            </picture>
                         </div>
                         <div class="carousel-item">
-                            <img src="../media/productos/topVenera/topVenera (3).jpg"
+                            <picture>
+                                <source src="../media/productos/topVenera/topVenera_3.webp">
+                                <img src="../media/productos/topVenera/topVenera_3.jpg" 
                                 class="d-block w-100 productoDetalle__carrousel--img" alt="Top Venera">
-                        </div>
+                            </picture>
+                        </div> 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,9 +128,27 @@
             <!-- Imagenes completas del carrusel -->
             <section class="imgCarruselCompletas">
                 <ul>
-                    <li><a href=""><img src="../media/productos/topVenera/topVenera (1).jpg" alt="Top Venera"></a></li>
-                    <li><a href=""><img src="../media/productos/topVenera/topVenera (2).jpg" alt="Top Venera"></a></li>
-                    <li><a href=""><img src="../media/productos/topVenera/topVenera (3).jpg" alt="Top Venera"></a></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        <picture>
+                            <source srcset="../media/productos/topVenera/topVenera_1.webp">
+                            <img src="../media/productos/topVenera/topVenera_1.jpg"
+                                class="imgCarruselCompletas" alt="Top Venera">
+                        </picture>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <picture>
+                            <source srcset="../media/productos/topVenera/topVenera_2.webp">
+                            <img src="../media/productos/topVenera/topVenera_2.jpg"
+                            class="imgCarruselCompletas" alt="Top Venera">
+                        </picture>
+                    </li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <picture>
+                            <source src="../media/productos/topVenera/topVenera_3.webp">
+                            <img src="../media/productos/topVenera/topVenera_3.jpg" 
+                            class="imgCarruselCompletas" alt="Top Venera">
+                        </picture>
+                    </li>                  
                 </ul>
             </section>
         </section>
