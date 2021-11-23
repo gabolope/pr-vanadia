@@ -460,7 +460,7 @@ header {
         padding: 2vh 0; } }
     .bodyProductos .mainProductos .seccionDetalles .detallesProductos .detallesProductos__talle,
     .bodyProductos .mainProductos .seccionDetalles .detallesProductos .detallesProductos__colores {
-      width: 45%; }
+      width: 80%; }
       .bodyProductos .mainProductos .seccionDetalles .detallesProductos .detallesProductos__talle .d-hidden,
       .bodyProductos .mainProductos .seccionDetalles .detallesProductos .detallesProductos__colores .d-hidden {
         visibility: hidden; }
