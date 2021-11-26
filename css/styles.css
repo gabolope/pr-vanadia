@@ -714,6 +714,17 @@ header .secciones .dropdown-toggle::after {
   }
 }
 
+.bodyProductos .mainProductos .seccionDetalles h4 {
+  font-size: .8rem;
+  font-style: italic;
+}
+
+@media all and (min-width: 762px) {
+  .bodyProductos .mainProductos .seccionDetalles h4 {
+    font-size: 1rem;
+  }
+}
+
 .bodyProductos .mainProductos .seccionDetalles .titularProductos {
   display: -webkit-box;
   display: -ms-flexbox;
